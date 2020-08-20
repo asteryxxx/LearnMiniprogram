@@ -1,2 +1,39 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<text>hhhhh</text>
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入用户名"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+
+<van-cell-group>
+  <van-field
+    value="{{ sms }}"
+    center
+    clearable
+    label="短信验证码"
+    placeholder="请输入短信验证码"
+    border="{{ false }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary"
+      >发送验证码</van-button
+    >
+  </van-field>
+</van-cell-group>
+
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+</van-dropdown-menu>
+
+<van-card
+  num="2"
+  price="2.00"
+  desc="描述信息"
+  title="商品标题"
+  thumb="{{ imageURL }}"
+/>

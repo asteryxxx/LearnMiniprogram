@@ -1,6 +1,11 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/about/about"] , 
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-card": "@vant/weapp/card/index"  }
+
 }
