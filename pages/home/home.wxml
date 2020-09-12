@@ -1,2 +1,11 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<text>我是text的内容</text>
+<view>{{name}}</view>
+<view>{{stus[0].name}}</view>
+<view wx:for='{{stus}}' wx:key="index">{{item.name}}--{{item.age}}</view>
+<!-- 这里如果不加{{}}，会当成字符串来遍历 -->
+
+<view>当前计数：{{count}}</view>
+<button size="mini" bindtap="countevent">点我计数</button>
+<!-- bindtap监听事件处理函数，在page写：tapName: function(event) {} -->
+<!-- page里面 this.data.count += 1;是做不到响应式数据更新的 -->
