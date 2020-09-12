@@ -1,2 +1,11 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<text class="title">hello,world</text>
+<button size="mini">按钮</button>
+<button size="mini" 
+    open-type="getUserInfo" 
+    bindgetuserinfo="handleGetUserinfo">
+ 获取授权
+</button>
+<open-data type='userNickName'></open-data>
+<open-data type="userGender" lang="zh_CN"></open-data>
+

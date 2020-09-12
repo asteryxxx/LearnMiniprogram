@@ -1,5 +1,13 @@
-// pages/home/home.js
+  var app = getApp();
+  // getApp()获取App()产生的实例对象
+  console.log(app.globaldata.name);
+
+  // pages/home/home.js
 Page({
+  handleGetUserinfo:function(event){
+    console.log(event)
+  },
+
 
   /**
    * 页面的初始数据
