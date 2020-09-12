@@ -1,2 +1,9 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view wx:for="{{list}}">{{item.title}}</view>
+<!-- -----4：其他事件------- -->
+<view wx:for="{{list}}">{{item.image}}</view>
+<view wx:for="{{list}}">{{item.image}}</view>
+<view wx:for="{{list}}">{{item.image}}</view>
+<view wx:for="{{list}}">{{item.image}}</view>
+<view wx:for="{{list}}">{{item.image}}</view>
+<view wx:for="{{list}}">{{item.image}}</view>
