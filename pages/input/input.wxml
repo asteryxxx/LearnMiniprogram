@@ -1,0 +1,21 @@
+<!--pages/input/input.wxml-->
+<input value="哈哈哈"></input>
+<!-- value是默认值 -->
+<input type="number"></input>
+<!-- type:决定键盘的类型 -->
+<input password></input>
+<!-- 暗文Password -->
+<input placeholder="请输入内容"></input>
+
+<input bindinput="handleinput"
+   bindfocus="handlefocus"
+   bindblur="handleblur"></input>
+
+<view>------scroll view组件-------</view>
+<!-- 水平滚动，view是块级元素 -->
+<scroll-view class="container1" scroll-x>
+   <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+<scroll-view class="container2" scroll-y bindscroll="scroll">
+   <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
