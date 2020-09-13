@@ -1,2 +1,17 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<!-- 使用自定义组件 -->
+<my-cpn/>
+
+<!-- 给自定义组件传递数据以及改变样式 -->
+<my-props title="哈哈哈哈" titleclass='red'/>
+<!-- titleclass是传给my-props.js的 -->
+<my-props title="嘻嘻嘻嘻" titleclass='green'/>
+<my-props />
+
+<!-- 组件内部发出事件 
+希望点击组件的按钮，外面的数加一-->
+<view>当前计数：{{counter}}</view>
+<my-event bind:increment="handleincre"/>
+<!--监听 bind:【组件发出的事件名】='自己处理的函数名' -->
+

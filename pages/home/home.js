@@ -1,11 +1,16 @@
 // pages/home/home.js
 Page({
-
+  handleincre(event){
+    console.log(event.detail.name);
+    this.setData({
+      counter:this.data.counter + 1
+    })
+  },
   /**
    * 页面的初始数据
    */
   data: {
-
+    counter:0
   },
 
   /**

@@ -1,0 +1,2 @@
+<!--commponents/my-event/my-event.wxml-->
+<button bindtap='handclick'>点我哥哥</button>
