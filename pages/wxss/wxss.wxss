@@ -1,0 +1,11 @@
+/* pages/wxss/wxss.wxss */
+@import './style/box.wxss'
+@import './style/content.wxss'
+/* 用相对路径 */
+.box{
+  color: blue;
+  font-size: 32px;
+}
+.content{
+  background: purple;
+}

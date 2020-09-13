@@ -1,0 +1,4 @@
+<!--pages/wxss/wxss.wxml-->
+<text class="box">test1</text>
+<text class="box1">test2</text>
+<text class="content1">content1</text>

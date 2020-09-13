@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/mustache/mustache",
+    "pages/wxss/wxss",
     "pages/home/home",
     "pages/about/about"
   ]

@@ -1,0 +1,10 @@
+<!--pages/mustache/mustache.wxml-->
+<view>{{message}}</view>
+<view>{{firstname}},{{lastname}}</view>
+<view>{{firstname+" , "+lastname}}</view>
+
+<view>{{age >= 18 ? '成年':'未成年'}}</view>
+<view>{{nowTime}}</view>
+<button size="mini" bindtap="handlecolor">切换颜色</button>
+<view class="box {{isActive?'active':''}}">哈哈哈哈</view>
+<!-- class动态的要加入{{}}说明是变量 -->
