@@ -1,0 +1,20 @@
+<!--pages/wxs/wxs.wxml-->
+ <!-- <wxs module='info'>
+  var message = 'helloworld';
+  var name = 'codewhy';
+  var sum = function(num1,num2){
+    return num1+num2;
+  }
+module.exports = {
+  message:message,
+  name:name,
+  sum:sum
+} 
+</wxs> -->
+<!-- 需要模块化导出才能访问。不要用es6语法 -->
+<view>嘻嘻嘻嘻嘻</view>
+ <wxs module='info' src="../../wxs/1.wxs"></wxs>
+ <view>{{info.name}}</view>
+<!-- 定义在单独的wxs文件中的导入方式 ，不能使用绝对路径-->
+ <wxs module='format' src="../../wxs/format.wxs"></wxs>
+<view>{{format.priceformat(12.334455,3)}}</view>

@@ -1,0 +1,15 @@
+
+  var message = 'helloworld';
+  var name = 'codewhy';
+  var sum = function(num1,num2){
+    return num1+num2;
+  }
+  function test(){
+    console.log('test...')
+  }
+module.exports = {
+  message:message,
+  name:name,
+  sum:sum,
+  test:test
+}
