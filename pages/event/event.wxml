@@ -1,0 +1,28 @@
+<!--pages/event/event.wxml-->
+<!-- <view>----------事件的传递参数------------</view> -->
+<view class="container">
+  <block wx:for="{{titles}}" wx:key="{{index}}">
+    <view class="item"
+      bindtap="handleitemclick"
+      data-index="{{index}}"
+      data-item="{{item}}">
+      <!-- 传递格式:data-属性的名称,右边是值 -->
+    {{item}}
+    </view>
+  </block>
+</view>
+<!-- <view>事件捕获</view> -->
+<!-- 捕获是从外往里面，冒泡是从里往外面 -->
+<view class="view1" bindtap="handleTap1" capture-bind:tap="handletCapture1">
+  <view class="view2" catchtap="handleTap2" capture-bind:tap="handletCapture2">
+    <view class="view3" bindtap="handleTap3" capture-bind:tap="handletCapture3">
+    </view>
+  </view>
+</view>
+<!-- 情况1：
+capture-catch:tap="handletCapture1"> 然后我们点击红色，在绿色捕获了，然后不
+往里面传递，只会打印handletCapture1 -->
+ <!--情况2：
+  <view class="view2" catchtap="handleTap2" 然后点击红色，因为只改动了这里，捕获
+ 是没有任何阻拦的，三个都会输出，然后冒泡在蓝色这里阻止了，所以打印
+ handleTap3， handleTap2，不会冒泡到view1 -->
