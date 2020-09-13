@@ -1,0 +1,14 @@
+<!--pages/template/template.wxml-->
+<!-- <template name="contentItem">
+  <button size="mini">按钮</button>
+  <view>{{content}}</view>
+</template> -->
+<import src="/wxml/template.wxml"/>
+<!-- 动态导入模板↑↑↑ -->
+<template is="contentItem" data="{{content:'hhhhh'}}"></template>
+<!-- 如果希望数据是动态的，用data传入变量 -->
+<template is="contentItem" data="{{content:'嘿诶嘿嘿额黑'}}"></template>
+<!-- include是不能导入模板的！！！！！！ 
+作用是:导入公共组件，例如导航条。
+然后可以递归导入。-->
+<!-- wxml不能递归导入!!! -->

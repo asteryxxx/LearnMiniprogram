@@ -1,0 +1,4 @@
+<include src='./xunhuan.wxml'/>
+<view>
+  <view>我是头部的文件...</view>
+</view>

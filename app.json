@@ -1,6 +1,9 @@
 {
-  "pages": [
+  "pages": [  
     "pages/home/home",
+    "pages/template/template",
+    "pages/for/for",
+    "pages/if/if",
     "pages/about/about"
   ]
 }

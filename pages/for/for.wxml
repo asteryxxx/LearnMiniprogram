@@ -1,0 +1,22 @@
+<!--pages/for/for.wxml-->
+<view>-------列表渲染------</view>
+<view wx:for="{{['aa','bb','cc']}}">{{item}},{{index}}</view>
+<view wx:for="{{9}}">{{item}}</view>
+<!-- 遍历九次 -->
+<view wx:if="{{isShow}}">
+  <button>按钮</button>
+  <view>呵呵</view>
+</view>
+<view>-----------block---------- </view>
+<!-- 需要包裹一组组件标签，希望对这一组标签进行整体的操作 -->
+<!-- <block>不是一个组件，仅仅是一个包装元素，不会渲染，只接受控制属性
+wx:for和wx:if就是控制属性 -->
+<view wx:for="{{nums}}" wx:for-item="movie"
+wx:for-index='i'>{{movie}}--{{i}}
+</view> <!-- wx:for-item起别名 -->
+
+<block wx:for="{{nums}}" wx:for-item="innernums">
+   <block wx:for="{{innernums}}">
+      <view>{{item}}</view>
+   </block>
+</block>

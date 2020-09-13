@@ -1,2 +1,4 @@
 <!--pages/home/home.wxml-->
+<include src='/wxml/header.wxml'/>
+<!-- include导入公共组件的,可以循环导入 -->
 <text>pages/home/home.wxml</text>

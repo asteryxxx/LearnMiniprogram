@@ -1,0 +1,8 @@
+<!--pages/if/if.wxml-->
+<view wx:if="{{score == 90}}">优秀</view>
+<view wx:if="{{score == 80}}">良好</view>
+<view wx:if="{{score == 60}}">及格</view>
+<view wx:else>不及格</view>
+<view>----------------</view>
+<view hidden="{{true}}">我是通过hidden控制的</view>
+<view wx:if="{{true}}">我是通过wx:if控制的</view>
