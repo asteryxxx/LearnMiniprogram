@@ -1,0 +1,14 @@
+<text>hello,world\n</text>
+<text>你好baby</text>
+<view>---------图片----------</view>
+<image src="../../assets/gou.jpg" show-menu-by-longpress
+mode="top"></image>
+<!-- <image src="/assets/gou.jpg"></image>
+/：表示根目录 ，用绝对路径和相对路径都可以 -->
+
+<button bindtap="handlechoosetupian">选中图片</button>
+<image src="{{imagePath}}" ></image>
+
+<image wx:for="{{5}}" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1599978504518&di=2df6d84946d22cbe4dac561d7402fa0c&imgtype=0&src=http%3A%2F%2Fnews.xinhuanet.com%2Fphoto%2F1210030_31n.jpg"
+bindload="handImageLoad" lazy-load >
+</image>
