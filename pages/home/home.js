@@ -1,6 +1,13 @@
 // pages/home/home.js
 Page({
-
+  xiugai(){
+      const wt = this.selectComponent('#wtab1')
+      console.log(wt)
+      wt.increnum(10)
+    },
+  itemclick(event){
+    console.log(event.detail.title);
+  },
   /**
    * 页面的初始数据
    */

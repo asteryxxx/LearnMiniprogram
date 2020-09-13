@@ -1,2 +1,5 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<w-tab titles="{{['精选','衣服','鞋子']}}"
+bind:itemclick="itemclick" id='wtab1'/>
+<button size="mini" bindtap="xiugai">修改数字</button>
+
+
