@@ -1,2 +1,21 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- ----------单个插槽---------- -->
+<my-slot>
+  <button size="mini">我是插入的按钮</button>
+</my-slot>
+
+<my-slot>
+  <slider value="70"></slider>
+</my-slot>
+
+<view>=====================</view>
+<my-duo-slot>
+<button slot='slot2'>slot2</button>
+<view slot='slot1'>slot1............</view>
+<!-- slot的内容会放在按钮上面 -->
+</my-duo-slot>
+
+<!-- <block wx:if="{{isShow}}">
+根据按钮来判断是否显示该组件！！！！
+  <my-slot/>
+</block> -->

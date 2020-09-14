@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-slot":"/components/my-slot/my-slot",
+    "my-duo-slot":"/components/my-duo-slot/my-duo-slot"
+  }
 }

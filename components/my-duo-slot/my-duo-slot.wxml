@@ -1,0 +1,10 @@
+<!--components/my-duo-slot/my-duo-slot.wxml-->
+<view>我是my-duo-slot组件的开头</view>
+<view ><slot name="slot1"/></view>
+<!-- 最好拿view包住slot比较好 -->
+<view ><slot name="slot2"/></view>
+<view><slot name="slot3"/></view>
+<view>我是my-duo-slot组件的结尾</view>
+<!-- 要记得加上这个属性：options: {
+    multipleSlots: true // 在组件定义时的选项中启用多slot支持
+  } -->
