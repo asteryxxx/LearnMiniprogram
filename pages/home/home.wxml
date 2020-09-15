@@ -1,2 +1,5 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<button>点我</button>
+<button bindtap="clickitem" size="mini">点我弹窗</button>
+<button bindtap="showloading" size="mini">showloading。。。</button>

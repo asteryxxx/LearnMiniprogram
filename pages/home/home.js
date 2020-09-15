@@ -1,18 +1,40 @@
 // pages/home/home.js
+import request from '../../network/network.js'
 Page({
-
+  showloading(){
+    wx.showLoading({
+      title:'加载2....',
+      mask:true
+    }),
+    setTimeout(()=>{
+      wx.hideLoading();
+    },2000)
+  },
+  clickitem(){
+    wx.showToast({
+      title: '加载ing.',
+      duration:3000,
+      icon:'loading',
+      mask:true
+      // 当我们点击弹窗的时候，点其他按钮是没有反应的
+    })
+  },
   /**
    * 页面的初始数据
    */
   data: {
-
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function () {
+    request({
+      url:'http://123.207.32.32:8000/home/multidata',
+    }).then(res=>{
+      console.log(res);
+    }).catch(err=>{
+      console.log(err);
+    })
   },
 
   /**
