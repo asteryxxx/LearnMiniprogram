@@ -1,2 +1,4 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view style="color:red;font-size:20px;">helloWorld</view>
+<navigator open-type="navigateBack" delta="2">首页返回</navigator>
+<button bindtap="fanhui">返回首页</button>

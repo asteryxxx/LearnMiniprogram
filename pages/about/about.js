@@ -1,6 +1,10 @@
 // pages/about/about.js
 Page({
-
+  fanhui(){
+    wx.navigateBack({
+      delta: 2
+    })
+  },
   /**
    * 页面的初始数据
    */

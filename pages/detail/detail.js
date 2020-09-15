@@ -1,18 +1,18 @@
-// pages/home/home.js
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "title":"hahahahah "
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
   },
 
   /**
@@ -40,7 +40,18 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+// 因为不知道是点了箭头还是按钮返回，可以在这里监听页面销毁
+    // 如果想传参数给首页的话
+    console.log('tuichu...')
+    const pages = getCurrentPages()
+    //用于获取当前页面栈的实例
+    console.log(pages)
+  //  0: Ze {__wxExparserNodeId__: "2d4710d1", __route__: "pages/home/home"
+   // 1: Ze {__wxExparserNodeId__: "2d285232", __route__: "pages/detail/detail"
+    const home = pages[pages.length-2];
+    home.setData({
+      title:'我是修改后的hehehehhe'
+    })
   },
 
   /**
@@ -60,14 +71,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function (options) {
-    return {
-      title:'我是av女忧',
-      path:'/pages/about/about',
-      imageUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1090392464,148709728&fm=26&gp=0.jpg',
-      success: function(res){
-          console.log('success')
-      　}
-    }
+  onShareAppMessage: function () {
+
   }
 })

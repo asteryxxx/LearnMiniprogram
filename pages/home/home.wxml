@@ -1,2 +1,19 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<button size="mini" open-type="share">分享</button>
+<!-- <navigator>页面跳转，页面没关闭， -->
+ <navigator url="../detail/detail">跳到详情页</navigator>
+ <!-- <navigator>属性：open-type，【会关闭当前页面】 -->
+ <navigator url="/pages/detail/detail" open-type="redirect">
+ 跳到详情页2redirect</navigator>
+
+<!-- switchTab:跳到tabbar页面，关闭其他非tabbar页面 -->
+  <navigator url="/pages/about/about" open-type="switchTab">
+about/switchTab</navigator>
+
+ <!-- 传递数据 -->
+ <navigator url="/pages/detail/detail?name=zhh" open-type="redirect">
+ 跳到详情页2带参数</navigator>
+   <!-- onLoad: function (options) {
+    console.log(options) 可以在这里获取到传的参数 -->
+  
+  <view>{{title}}</view>

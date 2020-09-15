@@ -1,0 +1,6 @@
+<!--pages/detail/detail.wxml-->
+<text>我是详情页的内容........</text>
+<navigator open-type="navigateBack">返回非tabBar</navigator>
+ <!-- delta:2  返回2个层级的页面 -->
+   <navigator url="/pages/about/about">
+我去关于</navigator>
